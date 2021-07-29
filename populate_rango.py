@@ -1,6 +1,5 @@
 import os
 
-#from django.core.exceptions import ViewDoesNotExist
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'tango_with_django_project.settings')
 
 import django
