@@ -82,3 +82,7 @@ def add_page(request, category_name_slug):
 
     context_dict = {'form': form, 'category': category}
     return render(request, 'rango/add_page.html', context=context_dict)
+
+def get_category_list(current_category=None):
+    return {'categories': Category.objects.all(),
+            'current_category': current_category}
